@@ -1,0 +1,26 @@
+{
+  "name" : "besquares/plugin-name",
+  "description" : "",
+  "type" : "wordpress-plugin",
+  "keywords" : [ "" ],
+  "license" : "GPL-2.0+",
+  "authors" : [
+    {
+      "name" : "Beshoy Dawood",
+      "email" : "echobeshoydawood@gmail.com",
+      "role" : "Developer"
+    }
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "BsShortener\\" : "src",
+      "BsShortener\\utils\\" : "src/utils",
+      "BsShortener\\front\\" : "src/front",
+      "BsShortener\\admin\\" : "src/admin"
+    }
+  },
+  "require" : {
+    "php" : ">=5.3.0"
+  },
+  "homepage" : "https://codecanyon.net/user/besquares/portfolio/"
+}
