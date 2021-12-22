@@ -10,10 +10,8 @@
  *
  * @since      1.0.0
  *
- * @package    BsShortener
- * @subpackage BsShortener/includes
+ * @package    PluginName
  *
- * @author     BeSquares <support@besquares.net>
  */
 
 namespace PluginName;
