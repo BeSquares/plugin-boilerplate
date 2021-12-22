@@ -19,7 +19,7 @@
  *
  */
 
-namespace BsShortener\utils;
+namespace PluginName\utils;
 
 class Loader
 {

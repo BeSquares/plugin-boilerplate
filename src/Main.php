@@ -104,4 +104,50 @@ class Main {
 
         $this->loader->addAction( 'admin_enqueue_scripts', $plugin_public, 'enqueue_styles' );
     }
+    /**
+     * Run the loader to execute all of the hooks with WordPress.
+     *
+     * @since    1.0.0
+     */
+    public function run()
+    {
+        $this->loader->run();
+    }
+
+    /**
+     * The name of the plugin used to uniquely identify it within the context of
+     * WordPress and to define internationalization functionality.
+     *
+     * @since     1.0.0
+     *
+     * @return string the name of the plugin
+     */
+    public function getPluginName()
+    {
+        return $this->plugin_name;
+    }
+
+    /**
+     * The reference to the class that orchestrates the hooks with the plugin.
+     *
+     * @since     1.0.0
+     *
+     * @return PluginName\utils\Loader orchestrates the hooks of the plugin
+     */
+    public function getLoader()
+    {
+        return $this->loader;
+    }
+
+    /**
+     * Retrieve the version number of the plugin.
+     *
+     * @since     1.0.0
+     *
+     * @return string the version number of the plugin
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
 }
